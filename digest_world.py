@@ -199,10 +199,17 @@ def send_email(subject: str, body: str):
     SENDER_EMAIL = os.getenv("EMAIL_SENDER")
     EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 
-    RECIPIENTS = [
-        "matus.nebus@gmail.com",
-        # sem hocikedy pridáš ďalšie
-    ]
+    # RECIPIENTS = [
+    #     "matus.nebus@gmail.com",
+    #     # sem hocikedy pridáš ďalšie
+    # ]
+
+    recipients_raw = os.getenv("EMAIL_RECIPIENTS", "")
+    RECIPIENTS = [r.strip() for r in recipients_raw.split(",") if r.strip()]
+
+    if not RECIPIENTS:
+        raise RuntimeError("Chýba EMAIL_RECIPIENTS (aspoň jeden email).")
+
 
     if not SENDER_EMAIL or not EMAIL_PASSWORD:
         raise RuntimeError("Chýbajú emailové environment variables.")
