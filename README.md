@@ -56,7 +56,6 @@ GitHub Actions workflow pre automatické spúšťanie projektu.
 4. Všetky sekcie sa spoja do jedného textu.  
 5. Výsledný digest je odoslaný e-mailom.
 
-## zoznam príjemcov
 Zoznam príjemcov nie je uložený v tomto repozitári, ale v samostatnom súkromnom repozitári.
 
 ## Použité technológie
@@ -66,7 +65,7 @@ Zoznam príjemcov nie je uložený v tomto repozitári, ale v samostatnom súkro
 - Gmail SMTP  
 - GitHub Actions
 
-Tu je príklad výstupu:
+## Príklad výstupu:
 
 Subject: Správy (svet, Slovensko, technológie) za posledných 12 hodín
 Message:
