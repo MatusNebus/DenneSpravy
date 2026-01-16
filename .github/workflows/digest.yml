@@ -18,6 +18,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Checkout recipients (private repo)
+        uses: actions/checkout@v4
+        with:
+          repository: MatusNebus/DenneSpravy-recipients
+          token: ${{ secrets.RECIPIENTS_REPO_TOKEN }}
+          path: config
+
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -33,6 +41,5 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-          EMAIL_RECIPIENTS: ${{ secrets.EMAIL_RECIPIENTS }}
         run: |
-          python digest_world.py
+          python main.py
