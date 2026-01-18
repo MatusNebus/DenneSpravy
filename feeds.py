@@ -19,7 +19,7 @@ SLOVAK_FEEDS = [
     # ("RTVS Správy", "https://spravy.rtvs.sk/rss/"), #aj toto
     ("SME Domov", "https://domov.sme.sk/rss"),
     ("Denník N Správy", "https://dennikn.sk/slovensko/feed/"),
-    ("Pravda", "https://spravy.pravda.sk/domace/rss/xml/")
+    ("Pravda", "https://spravy.pravda.sk/domace/rss/xml/"),
 ]
 
 TECH_FEEDS = [
@@ -27,7 +27,7 @@ TECH_FEEDS = [
     ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/index"),
     ("MIT Technology Review", "https://www.technologyreview.com/feed/"),
     ("Robot Report", "https://www.therobotreport.com/feed/"),
-    ("IEEE Spectrum", "https://spectrum.ieee.org/feeds/topic/robotics.rss")
+    ("IEEE Spectrum", "https://spectrum.ieee.org/feeds/topic/robotics.rss"),
     ("TechCrunch", "https://techcrunch.com/feed/"),
     # ("Wired", "https://www.wired.com/feed/rss"),
     
