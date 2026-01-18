@@ -12,7 +12,7 @@ def main() -> None:
             name="WORLD",
             feeds=WORLD_FEEDS,
             prompt_fn=prompt_world_en,
-            lookback_hours=12,
+            lookback_hours=24,
             max_items_per_feed=30,
             max_total_articles=120,
         ),
@@ -20,7 +20,7 @@ def main() -> None:
             name="SLOVENSKO",
             feeds=SLOVAK_FEEDS,
             prompt_fn=prompt_slovakia_sk,
-            lookback_hours=12,
+            lookback_hours=24,
             max_items_per_feed=30,
             max_total_articles=120,
         ),
@@ -28,7 +28,7 @@ def main() -> None:
             name="TECH",
             feeds=TECH_FEEDS,
             prompt_fn=prompt_tech_en,
-            lookback_hours=12,
+            lookback_hours=24,
             max_items_per_feed=30,
             max_total_articles=120,
         ),
@@ -49,7 +49,7 @@ def main() -> None:
     body = "\n\n".join(parts)
 
     send_email(
-        subject="Správy (svet, Slovensko, technológie) za posledných 12 hodín",
+        subject="Správy (svet, Slovensko, technológie) za posledných 24 hodín",
         body=body,
     )
 

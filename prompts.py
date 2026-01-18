@@ -36,6 +36,7 @@ RULES (strict):
 - Every factual claim you write must be supported by at least TWO different sources within the provided list.
 - If sources disagree on numbers (e.g., casualties), report a range and attribute figures to sources (e.g., “BBC: 32, Guardian: 22”).
 - Write in English, factual, no clickbait, maximize verified facts.
+- Use short, simple sentences if possible, rich for facts. Avoid very long compund sentences. 
 
 {IMPORTANCE_SCALE_EN}
 
@@ -66,6 +67,7 @@ PRAVIDLÁ (prísne):
 - Každý fakt musí byť podporený minimálne 2 rôznymi zdrojmi v rámci poskytnutého zoznamu.
 - Ak sa zdroje líšia v číslach (napr. obete), uveď rozsah a priraď hodnoty ku konkrétnym zdrojom (napr. „SME: 32, Pravda: 22“).
 - Píš po slovensky, vecne, bez clickbaitu, čo najviac overených faktov.
+- Ak je to možné, vyhni sa dlhým súvetiam, používaj jednoduchšie vety, bohaté na fakty.
 
 {IMPORTANCE_SCALE_SK}
 
@@ -95,7 +97,8 @@ RULES (strict):
 - Use ONLY information contained in the provided articles. Do not add outside knowledge.
 - Every factual claim must be supported by at least TWO different sources within the provided list.
 - If sources disagree on numbers/specs, report a range and attribute figures to sources.
-- Write in English, factual, no clickbait. Prefer real impact: security incidents, major product/platform changes, regulation, major company actions, critical research releases.
+- Write in English, factual, no clickbait.
+- Avoid very long compund sentences.
 
 {IMPORTANCE_SCALE_EN}
 
@@ -104,7 +107,7 @@ OUTPUT (exactly 5 items):
 (IMPORTANCE: X/10)
 Sources: source names (at least 2)
 
-Then write 3–8 sentences of continuous text.
+Then write 3–6 sentences of continuous text.
 
 Articles (JSON):
 {articles}

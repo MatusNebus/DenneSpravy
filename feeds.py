@@ -23,9 +23,12 @@ SLOVAK_FEEDS = [
 ]
 
 TECH_FEEDS = [
-    ("The Verge", "https://www.theverge.com/rss/index.xml"),
+    # ("The Verge", "https://www.theverge.com/rss/index.xml"),
     ("Ars Technica", "https://feeds.arstechnica.com/arstechnica/index"),
     ("MIT Technology Review", "https://www.technologyreview.com/feed/"),
+    ("Robot Report", "https://www.therobotreport.com/feed/"),
+    ("IEEE Spectrum", "https://spectrum.ieee.org/feeds/topic/robotics.rss")
     ("TechCrunch", "https://techcrunch.com/feed/"),
-    ("Wired", "https://www.wired.com/feed/rss"),
+    # ("Wired", "https://www.wired.com/feed/rss"),
+    
 ]
