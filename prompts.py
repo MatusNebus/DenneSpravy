@@ -107,7 +107,7 @@ OUTPUT (exactly 5 items):
 (IMPORTANCE: X/10)
 Sources: source names (at least 2)
 
-Then write 3–6 sentences of continuous text.
+Here write 3–6 sentences of continuous text.
 
 Articles (JSON):
 {articles}
